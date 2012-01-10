@@ -1,0 +1,15 @@
+{
+  "name": "vcr",
+  "description": "VCR: Record ajax request to later playback",
+  "version": "0.0.1",
+  "author": "elCuervo <elcuervo@elcuervo.co>",
+  "keywords": ["vcr", "tdd", "http", "record"],
+  "directories": {"lib": "./lib", "test": "./test"},
+  "repositories": [
+    {
+      "type": "git",
+      "url": "git://github.com/elcuervo/vcr.js.git"
+    }
+  ],
+  "main": "./lib/vcr.js"
+}
