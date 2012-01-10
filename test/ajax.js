@@ -6,6 +6,7 @@ scenario("Ajax interception", {
   'setup': function() {
     VCR.configure(function(c) {
       c.hookInto = window.XMLHttpRequest;
+      c.host = "http://localhost:9292/"
     });
   },
 
@@ -16,7 +17,7 @@ scenario("Ajax interception", {
       var makeRequest = function() {
         var ajax = new XMLHttpRequest();
 
-        ajax.open('GET', 'http://localhost:9292/test.html');
+        ajax.open('GET', 'test.html');
         ajax.onreadystatechange = function() {
           if(ajax.readyState === 4) {
             g.assertEqual("Hello World!\n", ajax.responseText);
