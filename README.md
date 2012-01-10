@@ -52,3 +52,6 @@ scenario("Ajax interception", {
 If you are using nodejs .json files will be created as cassetes to reproduce
 afterwards. In the other hand if you are running it in a browser localStorage
 will be used to persist the recordings.
+
+## Special Thanks
+[Pablo Dejuan](https://github.com/pdjota) for the idea.
