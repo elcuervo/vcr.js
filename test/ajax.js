@@ -30,7 +30,6 @@ scenario("Ajax interception", {
       // Wait for it...
       g.setTimeout(function() {
         makeRequest();
-        makeRequest();
       }, 1000);
     });
  }
