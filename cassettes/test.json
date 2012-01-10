@@ -1,1 +1,0 @@
-{"GET,http://localhost:9292/test.html":{"UNSENT":0,"OPENED":1,"HEADERS_RECEIVED":2,"LOADING":3,"DONE":4,"readyState":4,"responseText":"Hello World!\n","responseXML":"","status":200,"statusText":null}}
