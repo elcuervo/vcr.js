@@ -30,7 +30,7 @@ destroy, update, etc.
 ## How to use it
 
 I try to make it as similar to original VCR as possible.
-Using [Gerbil](http://github.com/elcuervo/gerbil) :P it's something like this:
+Using [Gerbil](http://github.com/elcuervo/gerbil) it's something like this:
 
 ```javascript
 scenario("Ajax interception", {
