@@ -47,7 +47,7 @@ scenario("Ajax interception", {
 });
 ```
 
-## What will happend?
+## What will happen?
 
 If you are using nodejs .json files will be created as cassetes to reproduce
 afterwards. In the other hand if you are running it in a browser localStorage
