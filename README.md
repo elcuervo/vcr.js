@@ -9,6 +9,24 @@ but for javasccript without any dependencies
 $ npm install vcr
 ```
 
+## Config
+
+```javasccript
+VCR.configure(function(c) {
+  c.hookInto = window.XMLHttpRequest;
+  c.cassetteLibraryDir = "recorder"; // default: 'cassettes'
+  c.host = "http://localhost:9393/"; // will prepend req url
+});
+```
+
+The only required config it's wich object to intercept, for now only works with
+XMLHttpRequest to catch ajax requests.
+
+hookInto: object to intercept
+cassetteLibraryDir: when using nodejs defines where to store cassettes
+host: usefull when running within node and want to cache request to save,
+destroy, update, etc.
+
 ## How to use it
 
 I try to make it as similar to original VCR as possible.
