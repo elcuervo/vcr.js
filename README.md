@@ -13,7 +13,7 @@ $ npm install vcr
 
 ## Config
 
-```javasccript
+```javascript
 VCR.configure(function(c) {
   c.hookInto = window.XMLHttpRequest;
   c.cassetteLibraryDir = "recorder"; // default: 'cassettes'
