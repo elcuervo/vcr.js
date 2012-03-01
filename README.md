@@ -1,5 +1,7 @@
 # VCR.js
 
+![VCR](http://upload.wikimedia.org/wikipedia/commons/thumb/5/56/N1500_v2.jpg/275px-N1500_v2.jpg)
+
 Record XMLHttpRequest calls and saves them using localStorage or files if using
 Nodejs.
 It's a js implementation of myronmarston's [VCR](https://github.com/myronmarston/vcr)
