@@ -5,11 +5,18 @@
   "author": "elCuervo <elcuervo@elcuervo.co>",
   "keywords": ["vcr", "tdd", "http", "record"],
   "directories": {"lib": "./lib", "test": "./test"},
+  "dependencies" : {
+    "gerbil": "*",
+    "xmlhttprequest": "*"
+  },
   "repositories": [
     {
       "type": "git",
       "url": "git://github.com/elcuervo/vcr.js.git"
     }
   ],
-  "main": "./lib/vcr.js"
+  "main": "./lib/vcr.js",
+  "scripts": {
+    "test": "node test/ajax.js"
+  }
 }
