@@ -5,10 +5,8 @@
   "author": "elCuervo <elcuervo@elcuervo.co>",
   "keywords": ["vcr", "tdd", "http", "record"],
   "directories": {"lib": "./lib", "test": "./test"},
-  "dependencies" : {
-    "gerbil": "*",
-    "xmlhttprequest": "*"
-  },
+  "devDependencies" : { "gerbil": "*" },
+  "dependencies" : { "xmlhttprequest": "*" },
   "repositories": [
     {
       "type": "git",
