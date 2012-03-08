@@ -1,5 +1,7 @@
 # VCR.js
 
+[![Build Status](https://secure.travis-ci.org/MoriTanosuke/FitbitAnalyzr.png?branch=master)](http://travis-ci.org/MoriTanosuke/FitbitAnalyzr)
+
 ![VCR](http://upload.wikimedia.org/wikipedia/commons/thumb/5/56/N1500_v2.jpg/275px-N1500_v2.jpg)
 
 Record XMLHttpRequest calls and saves them using localStorage or files if using
