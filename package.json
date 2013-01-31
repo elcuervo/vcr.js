@@ -5,7 +5,10 @@
   "author": "elCuervo <elcuervo@elcuervo.co>",
   "keywords": ["vcr", "tdd", "http", "record"],
   "directories": {"lib": "./lib", "test": "./test"},
-  "devDependencies" : { "gerbil": "*" },
+  "devDependencies" : {
+    "gerbil": "*",
+    "jquery": "*"
+  },
   "dependencies" : { "xmlhttprequest": "*" },
   "repositories": [
     {
