@@ -1,7 +1,7 @@
 {
   "name": "vcr",
   "description": "VCR: Record ajax request to later playback",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "elCuervo <elcuervo@elcuervo.co>",
   "keywords": ["vcr", "tdd", "http", "record"],
   "directories": {"lib": "./lib", "test": "./test"},
