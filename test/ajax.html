@@ -2,46 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <script type="text/javascript" src="../../gerbil/lib/gerbil.js"></script>
-    <script type="text/javascript" src="../lib/vcr.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://raw.github.com/elcuervo/gerbil/master/lib/gerbil.js"></script>
+    <script type="text/javascript" src="/lib/vcr.js"></script>
+    <script type="text/javascript" src="/test/ajax.js"></script>
     <title></title>
   </head>
-  <body onload="runTests()">
-    <script type="text/javascript">
-      var runTests = function() {
-
-        scenario("Ajax interception", {
-          'setup': function() {
-            VCR.configure(function(c) {
-              c.hookInto = window.XMLHttpRequest;
-            });
-          },
-
-          'Recording ajax request': function(g) {
-            VCR.useCassette('test', function(v) {
-              XMLHttpRequest = v.XMLHttpRequest;
-
-              var makeRequest = function() {
-                var ajax = new XMLHttpRequest();
-
-                ajax.open('GET', 'test.html');
-                ajax.onreadystatechange = function() {
-                  if(ajax.readyState === 4) {
-                    g.assertEqual("Hello World!\n", ajax.responseText);
-                  }
-                };
-                ajax.send(null);
-              }
-              // Record First Request
-              makeRequest();
-
-              // Wait for it...
-              g.setTimeout(function() { makeRequest(); }, 100);
-            });
-         }
-      });
-    }
-    </script>
-
-  </body>
+  <body onload=""> </body>
 </html>
