@@ -7,7 +7,7 @@
 Record XMLHttpRequest calls and saves them using localStorage or files if using
 Nodejs.
 It's a js implementation of myronmarston's [VCR](https://github.com/myronmarston/vcr)
-but for javasccript without any dependencies
+but for javascript without any dependencies
 
 ```bash
 $ npm install vcr
@@ -23,12 +23,12 @@ VCR.configure(function(c) {
 });
 ```
 
-The only required config it's wich object to intercept, for now only works with
+The only required config is which object to intercept, for now it only works with
 XMLHttpRequest to catch ajax requests.
 
 hookInto: object to intercept
 cassetteLibraryDir: when using nodejs defines where to store cassettes
-host: usefull when running within node and want to cache request to save,
+host: useful when running within node and want to cache request to save,
 destroy, update, etc.
 
 ## How to use it
@@ -72,7 +72,7 @@ scenario("Ajax interception", {
 ## What will happen?
 
 If you are using nodejs .json files will be created as cassetes to reproduce
-afterwards. In the other hand if you are running it in a browser localStorage
+afterwards. On the other hand if you are running it in a browser localStorage
 will be used to persist the recordings.
 
 ## Special Thanks
