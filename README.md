@@ -26,9 +26,9 @@ VCR.configure(function(c) {
 The only required config is which object to intercept, for now it only works with
 XMLHttpRequest to catch ajax requests.
 
-hookInto: object to intercept
-cassetteLibraryDir: when using nodejs defines where to store cassettes
-host: useful when running within node and want to cache request to save,
+__hookInto__: object to intercept   
+__cassetteLibraryDir__: when using nodejs defines where to store cassettes   
+__host__: useful when running within node and want to cache request to save,
 destroy, update, etc.
 
 ## How to use it
